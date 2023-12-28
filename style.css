@@ -31,6 +31,7 @@ body {
 section {
     min-height: 100vh;
     padding:10rem;
+    padding-top: 15rem;
     margin-top:30px;
 }
 
@@ -98,7 +99,6 @@ section {
     height: 53vh;
     border: 3px solid var(--main-color);
     border-radius: 50%;
-    /* box-shadow:0 0 30px #0ef ; */
     box-shadow: 0px 30px 80px  rgb(12, 222, 237);
     margin-left:100px;
     opacity: 0;
@@ -201,7 +201,7 @@ span {
     border-radius: 25%;
     box-shadow: -20px 20px 50px  rgb(12, 222, 237);
     margin-right:100px;
-       
+     
 }
 .heading {
     text-align: center;
@@ -224,47 +224,87 @@ span {
 
 }
 
-.services h2 {
-    margin-bottom: 5rem;
+/* ----------------------- */
 
-}
-
-.services-container {
+.ab {
     display: flex;
+    flex-direction: column;
+    margin:8rem;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
 }
 
-.services-container .services-box {
-    flex: 1 1 30rem;    
-    background: var(--second-bg-color);
-    padding:3rem 2rem 4rem;
-    border-radius: 2rem;
+.ab h2 {
+    margin-top:2rem;
+    margin-bottom:2rem;
+    font-size: 20px;
     text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
 }
 
-.services-container .services-box:hover {
-    border-color : var(--main-color);
-    transform: scale(1.02);
+.ab h2 span {
+    font-size: 30px;
 }
 
-.services-box i {
-    font-size: 7rem;
-    color: var(--main-color);
+.ab_detail {
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* margin: 2rem; */
+    /* margin-top: 0; */
+    width: 130rem;
+    height: 100rem;
+    background: var(--second-bg-color);
+    padding: 1rem;
+    border-radius: 12px;
 }
 
-.services-box h3 {
-    font-size: 2.6rem;
+.ab_detail div {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 2rem; */
 }
 
-.services-box p {
-    font-size : 1.6rem;
-    margin: 1rem 0 3rem;
+.ab_detail h3 {
+    text-align: center;
+    background: #b2e5e2;
+    color: #1f242d;
+    font-size: 20px;
+    margin: 2rem 50rem;
+    border-radius: 25px;
+    margin-bottom: 3rem;
+    padding: 7px;
 }
+
+.ab_detail p span{
+    background: var(--bg-color);
+    padding: 10px;
+    justify-content:space-between;
+    margin: 10px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+.EDUCATION p {
+    margin: 0.5rem;
+    background-color: var(--bg-color);
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 20px;
+}
+
+.INTERNSHIPS p {
+    margin: 0.5rem;
+    background-color: var(--bg-color);
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 20px;
+}
+
+
+/* ----------------------- */
 
 .portfolio {
     background: var(--second-bg-color);
@@ -304,7 +344,7 @@ span {
     left:0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1),var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .1),rgba(48, 171, 216, 0.466));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,47 +378,27 @@ span {
     font-size: 3rem;
 
 }
+.portfolio-layer p {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
 
 .contact h2 {
     margin-bottom: 3rem;
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width:100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
+/* /---------------------------/  */
+.contact {
     background: var(--second-bg-color);
-    border-radius: .8rem;
-    margin:.7rem 0;
+}
+.contact_details {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 3.2rem;
+  
 }
 
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
+/* /---------------------------/  */
 
 .footer {
     display: flex;
@@ -386,7 +406,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-box p {
@@ -497,9 +517,7 @@ span {
         padding:10rem 3% 2rem;
     }
 
-    .services {
-        padding-bottom: 7rem;
-    }
+    
     .portfolio {
         padding-bottom: 7rem;
     }
@@ -560,7 +578,7 @@ span {
         margin-top:4rem;
         margin-left: 11rem;
         box-shadow: 20px 20px 50px  rgb(12, 222, 237);
-           
+        
     }
 
     .about {
