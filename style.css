@@ -65,7 +65,7 @@ section {
     width:15rem; 
 }
 
-.navbar a {
+.navbar  a , .navbar-1 a{
     display: inline-block;
     font-size:1.7rem;
     color: var(--text-color);
@@ -78,11 +78,13 @@ section {
     animation-delay: calc(0.15s * var(--i));
 }
 
-.navbar a:hover ,.navbar a.active {
+
+
+.navbar a:hover ,.navbar a.active , .navbar-1 a:hover {
     color: var(--main-color);
 }
 
-#menu-icon {
+#menu-icon ,#menu-icon-1{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
@@ -527,6 +529,7 @@ span {
 }
 
 @media(max-width: 768px) {
+   
     #menu-icon {
         display: block;
     }
@@ -557,10 +560,11 @@ span {
 
     .ab {
         width: 120vw;
-        margin:0px;
+        margin:0;
         align-items: center;
         justify-content: center;
         margin-top: 8rem;
+
     }
     .ab_detail {
         font-size: 10px;
@@ -582,8 +586,6 @@ span {
     .EXPERTISE p {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 0;
-
     }
 
     .ab_detail h3 {
