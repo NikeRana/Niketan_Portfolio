@@ -555,6 +555,44 @@ span {
         margin:3rem 0;
     }
 
+    .ab {
+        width: 120vw;
+        margin:0px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+    .ab_detail {
+        font-size: 10px;
+        width:100vw;
+        height: 100%;
+        gap: 20px;
+    }
+   
+    .ab_detail div h3 {
+        text-align: center;
+        padding : 10px;
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-bottom:20px;
+    }
+    
+    
+    
+    .EXPERTISE p {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+
+    }
+
+    .ab_detail h3 {
+        text-align: left;
+        margin: 0;
+        
+    }
+
+
     .home {
         flex-direction: column;
     }
@@ -590,6 +628,10 @@ span {
     .services h2 {
         margin-bottom: 3rem;
     }
+
+    /* .ab_detail {
+        margin: 20px;
+    } */
 
     .portfolio h2 {
         margin-bottom:3rem;
